@@ -1,78 +1,113 @@
 {
-    "verbs": [
-      { "v": "EXITS",   "map": "EXITS" },
-      { "v": "QUIT",    "map": "QUIT"  },
-      { "v": "NORTH",   "map": "NORTH" },
-      { "v": "N",       "map": "NORTH" },
-      { "v": "SOUTH",   "map": "SOUTH" },
-      { "v": "S",       "map": "SOUTH" },
-      { "v": "EAST",    "map": "EAST"  },
-      { "v": "E",       "map": "EAST"  },
-      { "v": "WEST",    "map": "WEST"  },
-      { "v": "W",       "map": "WEST"  }
-    ],
+  "verbs": [
+    { "v": "EXITS",   "map": "EXITS" },
+    { "v": "QUIT",    "map": "QUIT"  },
+    { "v": "NORTH",   "map": "NORTH" },
+    { "v": "N",       "map": "NORTH" },
+    { "v": "SOUTH",   "map": "SOUTH" },
+    { "v": "S",       "map": "SOUTH" },
+    { "v": "EAST",    "map": "EAST"  },
+    { "v": "E",       "map": "EAST"  },
+    { "v": "WEST",    "map": "WEST"  },
+    { "v": "W",       "map": "WEST"  }
+  ],
 
-    "rooms": {
-      "START": {
-        "name": "Starting place",
-        "desc": "This is the place to start!",
+  "rooms": {
+    "START": {
+      "name": "Starting place",
+      "desc": "This is the place to start!",
+      "exits": [
+        {
+          "verb": "NORTH",
+          "target": "LOC1",
+          "condition": ""
+        },
+        {
+          "verb": "SOUTH",
+          "target": "LOC4",
+          "condition": ""
+        },
+        {
+          "verb": "WEST",
+          "target": "LOC3",
+          "condition": ""
+        },
+        {
+          "verb": "EAST",
+          "target": "LOC2",
+          "condition": ""
+        }
+      ]
+    },
+      "LOC1": {
+        "name": "Location 4",
+        "desc": "As you step into the dark room, you find your next step nonexistent, and fall down a large hole. At the bottom, you thankfully land on a mattress, however there is no way out. You rot to death.",
         "exits": [
-          {
-            "verb": "NORTH",
-            "target": "LOC1",
-            "condition": ""
-          },
-          {
-            "verb": "SOUTH",
-            "target": "LOC4",
-            "condition": ""
-          },
-          {
-            "verb": "WEST",
-            "target": "LOC3",
-            "condition": ""
-          },
-          {
-            "verb": "EAST",
-            "target": "LOC2",
-            "condition": ""
-          }
-        ],
-        "inventory": []
-      },
-      "LOC2": {
-        "name": "Location 2",
-        "desc": "Here is the second location.",
-        "exits": [
-        ],
-        "inventory": []
-      },
-      "LOC3": {
-        "name": "Location 3",
-        "desc": "This is the place to start!",
-        "exits": [
-          {
-            "verb": "NORTH",
-            "target": "LOC2",
-            "condition": ""
-          },
-          {
-            "verb": "SOUTH",
-            "target": "LOC2",
-            "condition": ""
-          },
-          {
-            "verb": "WEST",
-            "target": "LOC2",
-            "condition": ""
-          },
-          {
-            "verb": "EAST",
-            "target": "LOC2",
-            "condition": ""
-          }
-        ],
-        "inventory": []
-      },
-    }
+      
+      
+    
+    ]
   }
+    },
+    "LOC2": {
+      "name": "Location 2",
+      "desc": "Here is the second location. The only way to go is N",
+      "exits": [
+        {
+          "verb":"NORTH",
+          "target": "LOC5",
+          "condition": ""
+
+        }
+      ]
+    },
+    "LOC3": {
+      "name": "Location 3",
+      "desc": "Welcome to location 3",
+      "exits": [
+        {
+          "verb": "NORTH",
+          "target": "LOC6",
+          "condition": ""
+        }
+      ]
+    },             
+    "LOC4": {
+          "name": "Location 4",
+          "desc": "Welcome to location 4",
+          "exits": [
+            {
+              "verb": "WEST",
+              "target": "LOC7"
+            },
+            {
+              "verb": "EAST",
+              "target" :"LOC8"
+            }
+      
+      ]
+    },
+    "LOC5": {
+      "name": "Location 5",
+      "desc": "You enter the room and find a box. You open it, ready to defend you life if something comes out. To your surprise, you find gold, treasure and silver. You jump in joy. You leave through a window and spend your money on lotto tickets",
+      "exits": []
+    },
+      
+        "LOC6": {
+          "name": "Location 6",
+          "desc": "A gargling, demonic creature erupts out of the ground, grabbing your legs before you can evade. He drags you down a fiery hole while you feel complete terror. He feeds you to his children. Bobby thought your meat was tough.",
+          "exits": []
+        },
+         "LOC7": {
+          "name": "Location 7",
+          "desc": "You enter a room filled with nothing but cake. You celebrate, how can anything be better than this???!!!",
+          "exits": []
+          },
+          "LOC8": {
+            "name": "Location 8",
+            "desc": "You walk into a unfamiliar room. You look around and see other people there, using computers. The room is labeled LI503. A knight in shining armor says his name is Jason Fancis. He leads you to a seat, where you start your career in the computer software development industry. You win in life. ",
+            "exits": []
+              
+      }
+          
+}

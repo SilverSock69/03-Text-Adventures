@@ -36,7 +36,7 @@ def main():
         game = json.load(json_file)
 
     current = 'START'
-
+    ending = ['LOC1', 'LOC5', 'LOC6', 'LOC8', 'LOC7']
     quit = False
 
     while not quit:
@@ -46,6 +46,9 @@ def main():
         current = update(response,game,current)
 
         if response == 'QUIT':
+            quit = True
+        if current in ending:
+            render(game,current)    
             quit = True
 
 
