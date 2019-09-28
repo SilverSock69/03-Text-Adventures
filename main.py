@@ -12,6 +12,8 @@ def render(game,current):
 
     print('You are in the ' + game['rooms'][current]['name'])
     print(game['rooms'][current]['desc'])
+    for e in game['rooms'][current]['exits']:
+        print(e)
 
 def getInput():
     ''' Asks the user for input and returns a stripped, uppercase version of what they typed '''
