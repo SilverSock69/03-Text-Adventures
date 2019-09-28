@@ -1,0 +1,46 @@
+Name: Nick Jones
+Date: 9/28/2019
+Project: 03 Text Adventure
+Peer's repository: https://github.com/SilverSock69/03-Text-Adventures
+
+
+What is something you learned by reviewing your peer's project?
+I learned a little about json files, the game was having trouble finding
+some rooms but it turned out there was one "}" too early, closing the rooms
+section of the file.
+
+ 
+
+What is something you saw in your peer's project that you would like to apply to your own programming projects?
+I enjoyed the randomness of the rooms, some being cheery and some pretty brutal. It made for kind of a 
+unique surreal tone that was intriguing.
+ 
+
+What suggestions would you have for your peer to improve his/her code?
+It would have been convenient if the locations you could go to were listed
+since you can't always go all 4 directions, but it seems like that was also
+an issue with the classic text adventure games so no big deal. I did a rough
+implementation of that before I played it.
+ 
+
+What could have been clearer or better commented?
+The main is mostly the stuff from class I think, so I didn't feel like it
+needed more comments.
+ 
+
+Was there anything in the code that was confusing to you? If so, what?
+No it was explained in class so it was fine.
+
+
+Does the repository contain an appropriate LICENSE?
+Yeah it has a name and year.
+
+
+What is something he/she could add to the README.md to make it more descriptive?
+I think the readme is fine, most people would probably know to run main
+and it says what the project is.
+
+
+Pay a compliment to your peer based on the quality of his/her code.
+I liked the game, it was fun wondering if the next room would kill me or
+give me some cake. 
